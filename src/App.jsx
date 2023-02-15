@@ -35,9 +35,6 @@ export default function App() {
         setTenzies(isGameWon)
     }, [dice])
 
-    React.useEffect(() => {
-    }, [rollCount])
-
     function generateNewDie() {
         return {
             value: Math.ceil(Math.random() * 6),
